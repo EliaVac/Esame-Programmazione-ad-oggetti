@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ahWGAF8rEeucEdZoZ2xFCA" name="NewModel">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_O3qLEGZHEeu3d4fJ0VeUzg" name="Actor1">
+    <eAnnotations xmi:id="_O3vDkGZHEeu3d4fJ0VeUzg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_O3vDkWZHEeu3d4fJ0VeUzg" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_QdPo0GZHEeu3d4fJ0VeUzg" name="See Events"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hLVWwGZHEeu3d4fJ0VeUzg" name="Events Statistics"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_0Kr8sGZHEeu3d4fJ0VeUzg" name="See Metadata"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7CLY8GZHEeu3d4fJ0VeUzg" name="See Regions"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__qQ-YGZHEeu3d4fJ0VeUzg" memberEnd="__qavYGZHEeu3d4fJ0VeUzg __qbWcGZHEeu3d4fJ0VeUzg">
+    <ownedEnd xmi:id="__qavYGZHEeu3d4fJ0VeUzg" type="_0Kr8sGZHEeu3d4fJ0VeUzg" association="__qQ-YGZHEeu3d4fJ0VeUzg"/>
+    <ownedEnd xmi:id="__qbWcGZHEeu3d4fJ0VeUzg" type="_7CLY8GZHEeu3d4fJ0VeUzg" association="__qQ-YGZHEeu3d4fJ0VeUzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DpaUgGZIEeu3d4fJ0VeUzg" name="Database"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_sKk2EGZIEeu3d4fJ0VeUzg" name="Type (venue, attraction, ....)"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_wBWTUGZIEeu3d4fJ0VeUzg" name="Timeline"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8xzHAGZIEeu3d4fJ0VeUzg" memberEnd="_8xzuEGZIEeu3d4fJ0VeUzg _8xzuEWZIEeu3d4fJ0VeUzg">
+    <ownedEnd xmi:id="_8xzuEGZIEeu3d4fJ0VeUzg" type="_DpaUgGZIEeu3d4fJ0VeUzg" association="_8xzHAGZIEeu3d4fJ0VeUzg"/>
+    <ownedEnd xmi:id="_8xzuEWZIEeu3d4fJ0VeUzg" type="_sKk2EGZIEeu3d4fJ0VeUzg" association="_8xzHAGZIEeu3d4fJ0VeUzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-FC3kGZIEeu3d4fJ0VeUzg" memberEnd="_-FC3kWZIEeu3d4fJ0VeUzg _-FDeoGZIEeu3d4fJ0VeUzg">
+    <ownedEnd xmi:id="_-FC3kWZIEeu3d4fJ0VeUzg" type="_DpaUgGZIEeu3d4fJ0VeUzg" association="_-FC3kGZIEeu3d4fJ0VeUzg"/>
+    <ownedEnd xmi:id="_-FDeoGZIEeu3d4fJ0VeUzg" type="_wBWTUGZIEeu3d4fJ0VeUzg" association="_-FC3kGZIEeu3d4fJ0VeUzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_BHi_QGZJEeu3d4fJ0VeUzg" name="Regions (US, UK, Ireland)"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HbqBoGZJEeu3d4fJ0VeUzg" memberEnd="_HbqBoWZJEeu3d4fJ0VeUzg _HbqosGZJEeu3d4fJ0VeUzg">
+    <ownedEnd xmi:id="_HbqBoWZJEeu3d4fJ0VeUzg" type="_DpaUgGZIEeu3d4fJ0VeUzg" association="_HbqBoGZJEeu3d4fJ0VeUzg"/>
+    <ownedEnd xmi:id="_HbqosGZJEeu3d4fJ0VeUzg" type="_BHi_QGZJEeu3d4fJ0VeUzg" association="_HbqBoGZJEeu3d4fJ0VeUzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_llI5gGZQEeu3d4fJ0VeUzg" memberEnd="_llJgkGZQEeu3d4fJ0VeUzg _llJgkWZQEeu3d4fJ0VeUzg">
+    <ownedEnd xmi:id="_llJgkGZQEeu3d4fJ0VeUzg" type="_O3qLEGZHEeu3d4fJ0VeUzg" association="_llI5gGZQEeu3d4fJ0VeUzg"/>
+    <ownedEnd xmi:id="_llJgkWZQEeu3d4fJ0VeUzg" type="_QdPo0GZHEeu3d4fJ0VeUzg" association="_llI5gGZQEeu3d4fJ0VeUzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mlQSsGZQEeu3d4fJ0VeUzg" memberEnd="_mlQ5wGZQEeu3d4fJ0VeUzg _mlRg0GZQEeu3d4fJ0VeUzg">
+    <ownedEnd xmi:id="_mlQ5wGZQEeu3d4fJ0VeUzg" type="_O3qLEGZHEeu3d4fJ0VeUzg" association="_mlQSsGZQEeu3d4fJ0VeUzg"/>
+    <ownedEnd xmi:id="_mlRg0GZQEeu3d4fJ0VeUzg" type="_hLVWwGZHEeu3d4fJ0VeUzg" association="_mlQSsGZQEeu3d4fJ0VeUzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nyL_4GZQEeu3d4fJ0VeUzg" memberEnd="_nyL_4WZQEeu3d4fJ0VeUzg _nyMm8GZQEeu3d4fJ0VeUzg">
+    <ownedEnd xmi:id="_nyL_4WZQEeu3d4fJ0VeUzg" type="_O3qLEGZHEeu3d4fJ0VeUzg" association="_nyL_4GZQEeu3d4fJ0VeUzg"/>
+    <ownedEnd xmi:id="_nyMm8GZQEeu3d4fJ0VeUzg" type="_0Kr8sGZHEeu3d4fJ0VeUzg" association="_nyL_4GZQEeu3d4fJ0VeUzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_o7JzEGZQEeu3d4fJ0VeUzg" memberEnd="_o7KaIGZQEeu3d4fJ0VeUzg _o7KaIWZQEeu3d4fJ0VeUzg">
+    <ownedEnd xmi:id="_o7KaIGZQEeu3d4fJ0VeUzg" type="_O3qLEGZHEeu3d4fJ0VeUzg" association="_o7JzEGZQEeu3d4fJ0VeUzg"/>
+    <ownedEnd xmi:id="_o7KaIWZQEeu3d4fJ0VeUzg" type="_DpaUgGZIEeu3d4fJ0VeUzg" association="_o7JzEGZQEeu3d4fJ0VeUzg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_P1gzsG1IEeutWZoe2m0_hA" name="controller" visibility="public">
+    <packagedElement xmi:type="uml:Class" xmi:id="_F3PXQG1JEeutWZoe2m0_hA" name="Controller" visibility="public">
+      <ownedAttribute xmi:id="_b8ZQgG1JEeutWZoe2m0_hA" name="service" visibility="private" type="_kysi0G1JEeutWZoe2m0_hA"/>
+      <ownedOperation xmi:id="_WN3K8G1KEeutWZoe2m0_hA" name="getInstruction"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_XZ1gwG1IEeutWZoe2m0_hA" name="service">
+    <packagedElement xmi:type="uml:Class" xmi:id="_kysi0G1JEeutWZoe2m0_hA" name="Service" visibility="public">
+      <ownedAttribute xmi:id="_oK84EG1JEeutWZoe2m0_hA" name="IstructionCraft" visibility="private"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_iE58UG1IEeutWZoe2m0_hA" name="util"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jYfrIG1IEeutWZoe2m0_hA" name="model"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_J5QeYG1NEeuNMISTHGvMJQ" name="UseCase9"/>
+</uml:Model>
