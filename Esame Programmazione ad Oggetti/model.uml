@@ -59,4 +59,5 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_iE58UG1IEeutWZoe2m0_hA" name="util"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_jYfrIG1IEeutWZoe2m0_hA" name="model"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_J5QeYG1NEeuNMISTHGvMJQ" name="UseCase9"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_E2BHYG3kEeuWU8gdMvs0vg" name="UseCase10"/>
 </uml:Model>
