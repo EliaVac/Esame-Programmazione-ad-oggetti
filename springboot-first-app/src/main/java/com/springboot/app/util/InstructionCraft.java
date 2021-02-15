@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.springboot.app.model.Instruction;
 
-public class IstructionCraft {
+public class InstructionCraft {
 
 	public ArrayList<Instruction> getInstructionsManual() {
 		ArrayList<Instruction> total = new ArrayList<>();
