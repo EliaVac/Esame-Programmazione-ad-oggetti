@@ -569,6 +569,15 @@
           <styles xmi:type="notation:ShapeStyle" xmi:id="_lF8rcW1IEeutWZoe2m0_hA" fontName="Segoe UI" bold="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lF8rcm1IEeutWZoe2m0_hA" x="822" y="192" width="120" height="100"/>
         </children>
+        <children xmi:type="notation:Node" xmi:id="_zTzgAG-zEeuIC-IF_ileww" type="2003" element="_zS5hEG-zEeuIC-IF_ileww">
+          <children xmi:type="notation:Node" xmi:id="_zT8C4G-zEeuIC-IF_ileww" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_zT8p8G-zEeuIC-IF_ileww" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_zT8p8W-zEeuIC-IF_ileww"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_zT8p8m-zEeuIC-IF_ileww"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zTzgAW-zEeuIC-IF_ileww" fontName="Segoe UI" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zTzgAm-zEeuIC-IF_ileww" x="900" y="372" width="120" height="100"/>
+        </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_OLjzUm1IEeutWZoe2m0_hA"/>
       </data>
     </ownedAnnotationEntries>
@@ -667,6 +676,15 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Package']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Package']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_zS5hEG-zEeuIC-IF_ileww" name="Class1" tooltipText="NewModel::Class1" width="12" height="10">
+      <target xmi:type="uml:Class" href="model.uml#_y8fMMG-zEeuIC-IF_ileww"/>
+      <semanticElements xmi:type="uml:Class" href="model.uml#_y8fMMG-zEeuIC-IF_ileww"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_zS6IIG-zEeuIC-IF_ileww" labelSize="9" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundStyle="Liquid" foregroundColor="232,239,247">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@containerMappings[name='CD_Class']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_OLAZsG1IEeutWZoe2m0_hA"/>
