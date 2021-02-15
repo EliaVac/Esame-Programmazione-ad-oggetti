@@ -34,4 +34,4 @@ public class DatabaseCraft {
 		}
 		return database;
 	}
-}
+ }
