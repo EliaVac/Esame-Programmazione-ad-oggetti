@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ahWGAF8rEeucEdZoZ2xFCA" name="NewModel">
+  <packageImport xmi:id="_HS5ngG-7EeuIC-IF_ileww">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
   <packagedElement xmi:type="uml:Actor" xmi:id="_O3qLEGZHEeu3d4fJ0VeUzg" name="Actor1">
     <eAnnotations xmi:id="_O3vDkGZHEeu3d4fJ0VeUzg" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <details xmi:id="_O3vDkWZHEeu3d4fJ0VeUzg" key="Human"/>
@@ -53,11 +56,45 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_XZ1gwG1IEeutWZoe2m0_hA" name="service">
     <packagedElement xmi:type="uml:Class" xmi:id="_kysi0G1JEeutWZoe2m0_hA" name="Service" visibility="public">
-      <ownedAttribute xmi:id="_oK84EG1JEeutWZoe2m0_hA" name="IstructionCraft" visibility="private"/>
+      <ownedAttribute xmi:id="_oK84EG1JEeutWZoe2m0_hA" name="InstructionCraft" visibility="private"/>
     </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Package" xmi:id="_iE58UG1IEeutWZoe2m0_hA" name="util"/>
-  <packagedElement xmi:type="uml:Package" xmi:id="_jYfrIG1IEeutWZoe2m0_hA" name="model"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_iE58UG1IEeutWZoe2m0_hA" name="util">
+    <packagedElement xmi:type="uml:Class" xmi:id="_mbRNsG-7EeuIC-IF_ileww" name="databaseCraft" visibility="public">
+      <ownedOperation xmi:id="_-ajRUG-7EeuIC-IF_ileww" name="getDatabase"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qKobYG-7EeuIC-IF_ileww" name="InstructionCraft" visibility="public">
+      <ownedOperation xmi:id="_IJQLQG-8EeuIC-IF_ileww" name=" getInstructionsManual"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jYfrIG1IEeutWZoe2m0_hA" name="model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_u95dcG-4EeuIC-IF_ileww" name="Date" visibility="public">
+      <ownedAttribute xmi:id="_TQu9YG-5EeuIC-IF_ileww" name="anno" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XigUkG-5EeuIC-IF_ileww" name="Event" visibility="public">
+      <ownedAttribute xmi:id="_Z-_lIG-5EeuIC-IF_ileww" name="type" visibility="private"/>
+      <ownedAttribute xmi:id="_ga54oG-5EeuIC-IF_ileww" name="location" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pQn8IG-5EeuIC-IF_ileww" name="Instruction" visibility="public">
+      <ownedAttribute xmi:id="_rcQtQG-5EeuIC-IF_ileww" name="init" visibility="private"/>
+      <ownedAttribute xmi:id="_srdrUG-5EeuIC-IF_ileww" name="end" visibility="private"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jxI_MG-6EeuIC-IF_ileww" name="Location" visibility="public">
+      <ownedAttribute xmi:id="_lYsL0G-6EeuIC-IF_ileww" name="region" visibility="private"/>
+      <ownedAttribute xmi:id="_nxNiYG-6EeuIC-IF_ileww" name="state" visibility="private"/>
+      <ownedAttribute xmi:id="_n2BJ4G-6EeuIC-IF_ileww" name="statecode" visibility="private"/>
+      <ownedAttribute xmi:id="_n4At8G-6EeuIC-IF_ileww" name="country" visibility="private"/>
+      <ownedAttribute xmi:id="_n5xBcG-6EeuIC-IF_ileww" name="countrycode" visibility="private"/>
+      <ownedAttribute xmi:id="_n7SEYG-6EeuIC-IF_ileww" name="city" visibility="private"/>
+      <ownedAttribute xmi:id="_upyjwG-6EeuIC-IF_ileww" name="address" visibility="private"/>
+      <ownedAttribute xmi:id="_JG4toG-7EeuIC-IF_ileww" name="longitude" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_V2MR0G-7EeuIC-IF_ileww" name="latitude" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_J5QeYG1NEeuNMISTHGvMJQ" name="UseCase9"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_E2BHYG3kEeuWU8gdMvs0vg" name="UseCase10"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_y8fMMG-zEeuIC-IF_ileww" name="Class1" visibility="public"/>
