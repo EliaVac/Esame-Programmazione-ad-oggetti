@@ -1,5 +1,8 @@
 package com.springboot.app.controller;
 
+import java.io.IOException;
+
+import org.json.JSONException;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,8 +17,13 @@ public class Controller {
 	private Service service;
 
 	@GetMapping("/GetInstructions")
-	public ResponseEntity<Object> getInstruction(){
-		return new ResponseEntity<>(service.DisplayInstructions(),HttpStatus.OK);
+	public ResponseEntity<Object> getInstruction() {
+		return new ResponseEntity<>(service.DisplayInstructions(), HttpStatus.OK);
+
 	}
 
+	@GetMapping("/GetDatabase")
+	public ResponseEntity<Object> getDatabase() throws IOException, JSONException {
+		return new ResponseEntity<>(service.DisplayDatabase(), HttpStatus.OK);
+	}
 }
