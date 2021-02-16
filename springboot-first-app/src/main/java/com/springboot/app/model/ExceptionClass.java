@@ -2,7 +2,7 @@ package com.springboot.app.model;
 
 import java.util.Calendar;
 
-public class Exception {
+public class ExceptionClass extends Exception{
 	private String timestamp;
 	private String status;
 	private String error;
@@ -12,7 +12,7 @@ public class Exception {
 	 * @param error
 	 * @param message
 	 */
-	public Exception(String status, String error, String message) {
+	public ExceptionClass(String status, String error, String message) {
 		super();
 		this.timestamp= Calendar.getInstance().toString();
 		this.status = status;

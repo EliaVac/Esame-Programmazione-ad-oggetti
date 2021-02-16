@@ -6,83 +6,73 @@ public class Date {
     private int day;
     private int hour;
     private int minute;
-	/**
-	 * @param year
-	 * @param month
-	 * @param day
-	 * @param hour
-	 * @param minute
-	 */
-	public Date(int year, int month, int day, int hour, int minute) {
-		super();
-		this.year = year;
-		this.month = month;
-		this.day = day;
-		this.hour = hour;
-		this.minute = minute;
+
+	public Date(String date,String time) {
+		String[] date_sliced=date.split("-");
+		String[] time_sliced=time.split(":");
+		this.year = Integer.parseInt(date_sliced[0]);
+		this.month = Integer.parseInt(date_sliced[1]);
+		this.day = Integer.parseInt(date_sliced[2]);
+		this.hour = Integer.parseInt(time_sliced[0]);
+		this.minute = Integer.parseInt(time_sliced[1]);
 	}
+
 	/**
 	 * @return the year
 	 */
 	public int getYear() {
 		return year;
 	}
-	/**
-	 * @param year the year to set
-	 */
-	public void setYear(int year) {
-		this.year = year;
-	}
+
 	/**
 	 * @return the month
 	 */
 	public int getMonth() {
 		return month;
 	}
-	/**
-	 * @param month the month to set
-	 */
-	public void setMonth(int month) {
-		this.month = month;
-	}
+
 	/**
 	 * @return the day
 	 */
 	public int getDay() {
 		return day;
 	}
-	/**
-	 * @param day the day to set
-	 */
-	public void setDay(int day) {
-		this.day = day;
-	}
-	@Override
-	public String toString() {
-		return "Date: "+year+ "/" + month + "/" + day + " - hour: " + hour + ":" + minute+ ";";
-	}
+
 	/**
 	 * @return the hour
 	 */
 	public int getHour() {
 		return hour;
 	}
-	/**
-	 * @param hour the hour to set
-	 */
-	public void setHour(int hour) {
-		this.hour = hour;
-	}
+
 	/**
 	 * @return the minute
 	 */
 	public int getMinute() {
 		return minute;
 	}
-	/**
-	 * @param minute the minute to set
-	 */
-	public void setMinute(int minute) {
-		this.minute = minute;
+
+	@Override
+	public String toString() {
+		String correct_hour,correct_minute,correct_day,correct_month;
+		if(hour<10)
+			correct_hour="0"+hour;
+		else
+			correct_hour=""+hour ;
+		if(minute<10)
+			correct_minute="0"+minute;
+		else
+			correct_minute=""+minute;
+		if(day<10)
+			correct_day="0"+day;
+		else
+			correct_day=""+day;
+		if(month<10)
+			correct_month="0"+month;
+		else
+			correct_month=""+month;
+		
+		return  correct_hour + ":" + correct_minute+ " - "+correct_day + "/" + correct_month + "/" + year;
 	}
+
 }

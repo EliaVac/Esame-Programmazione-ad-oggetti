@@ -34,6 +34,60 @@ public class Location {
 		this.longitude = longitude;
 		this.latitude = latitude;
 	}
+	/**
+	 * @return the region
+	 */
+	public String getRegion() {
+		return region;
+	}
+	/**
+	 * @return the state
+	 */
+	public String getState() {
+		return state;
+	}
+	/**
+	 * @return the statecode
+	 */
+	public String getStatecode() {
+		return statecode;
+	}
+	/**
+	 * @return the country
+	 */
+	public String getCountry() {
+		return country;
+	}
+	/**
+	 * @return the countrycode
+	 */
+	public String getCountrycode() {
+		return countrycode;
+	}
+	/**
+	 * @return the city
+	 */
+	public String getCity() {
+		return city;
+	}
+	/**
+	 * @return the address
+	 */
+	public String getAddress() {
+		return address;
+	}
+	/**
+	 * @return the longitude
+	 */
+	public double getLongitude() {
+		return longitude;
+	}
+	/**
+	 * @return the latitude
+	 */
+	public double getLatitude() {
+		return latitude;
+	}
 	
 
 }

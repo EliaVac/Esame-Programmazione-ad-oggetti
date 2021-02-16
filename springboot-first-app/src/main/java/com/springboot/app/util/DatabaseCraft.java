@@ -20,24 +20,32 @@ public class DatabaseCraft {
 		ArrayList<Event> database = new ArrayList<>();
 		String data =StringRequest();
 		if(data!=null) {
-		JSONObject databaseObject = new JSONObject(data);
-		JSONObject dataObject = (JSONObject)databaseObject.get("_embedded");
-		JSONArray dataArray = (JSONArray)dataObject.get("events");
+		JSONObject fullObject = new JSONObject(data);
+		JSONObject firstObject = (JSONObject)fullObject.get("_embedded");
+		JSONArray dataArray = (JSONArray)firstObject.get("events");
 		for(int i=0;i<dataArray.length();i++) {
 			try {
-			JSONObject event1 = (JSONObject)((JSONObject)dataArray.get(i)).get("_embedded");
-			JSONArray venues = (JSONArray)event1.get("venues");
-			JSONObject event2 = (JSONObject)venues.get(0);
+			JSONObject info_event = (JSONObject)((JSONObject)dataArray.get(i)).get("_embedded");
+			JSONArray venues = (JSONArray)info_event.get("venues");
+			JSONObject info_geo_event = (JSONObject)venues.get(0);
+			JSONArray classifications =(JSONArray)((JSONObject) dataArray.get(i)).get("classifications");
+			JSONObject info_typ_event=(JSONObject)classifications.get(0);
+			JSONObject info_dat_event=(JSONObject)(((JSONObject) ((JSONObject)dataArray.get(i)).get("dates")).getJSONObject("start"));
+			String date= (String)info_dat_event.get("localDate");
+			String time= (String)info_dat_event.get("localTime");
+			String type= (String)((JSONObject)dataArray.get(i)).get("type");
+			String genre= (String)((JSONObject)(info_typ_event.get("genre"))).get("name");
+			String subgenre= (String)((JSONObject)(info_typ_event.get("subGenre"))).get("name");
 			String region=(String)((JSONObject)dataArray.get(i)).get("locale");
-			String state=(String)((JSONObject)event2.get("state")).get("name");
-			String statecode=(String)((JSONObject)event2.get("state")).get("stateCode");
-			String country=(String)((JSONObject)event2.get("country")).get("name");
-			String countrycode=(String)((JSONObject)event2.get("country")).get("countryCode");
-			String city=(String)((JSONObject)event2.get("city")).get("name");
-			String address=(String)((JSONObject)event2.get("address")).get("line1");
-			double longitude=(double)((JSONObject)event2.get("location")).get("longitude");
-			double latitude=(double)((JSONObject)event2.get("location")).get("latitude");
-			Event event=new Event(address, new Location(region, state, statecode, country, countrycode, city, address, longitude, latitude));
+			String state=(String)((JSONObject)info_geo_event.get("state")).get("name");
+			String statecode=(String)((JSONObject)info_geo_event.get("state")).get("stateCode");
+			String country=(String)((JSONObject)info_geo_event.get("country")).get("name");
+			String countrycode=(String)((JSONObject)info_geo_event.get("country")).get("countryCode");
+			String city=(String)((JSONObject)info_geo_event.get("city")).get("name");
+			String address=(String)((JSONObject)info_geo_event.get("address")).get("line1");
+			double longitude=Double.parseDouble((String)((JSONObject)info_geo_event.get("location")).get("longitude"));
+			double latitude=Double.parseDouble((String)((JSONObject)info_geo_event.get("location")).get("latitude"));
+			Event event=new Event(type, new Location(region, state, statecode, country, countrycode, city, address, longitude, latitude),genre,subgenre,date,time);
 			database.add(event);
 			}catch (Exception e){
 				continue;
