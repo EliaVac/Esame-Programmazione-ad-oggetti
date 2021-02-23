@@ -8,15 +8,15 @@
       <details xmi:id="_O3vDkWZHEeu3d4fJ0VeUzg" key="Human"/>
     </eAnnotations>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_QdPo0GZHEeu3d4fJ0VeUzg" name="See Events"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_hLVWwGZHEeu3d4fJ0VeUzg" name="Events Statistics"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_0Kr8sGZHEeu3d4fJ0VeUzg" name="See Metadata"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_QdPo0GZHEeu3d4fJ0VeUzg" name="Key Words"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hLVWwGZHEeu3d4fJ0VeUzg" name=" Statistics"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_0Kr8sGZHEeu3d4fJ0VeUzg" name="Find Sites"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_7CLY8GZHEeu3d4fJ0VeUzg" name="See Regions"/>
   <packagedElement xmi:type="uml:Association" xmi:id="__qQ-YGZHEeu3d4fJ0VeUzg" memberEnd="__qavYGZHEeu3d4fJ0VeUzg __qbWcGZHEeu3d4fJ0VeUzg">
     <ownedEnd xmi:id="__qavYGZHEeu3d4fJ0VeUzg" type="_0Kr8sGZHEeu3d4fJ0VeUzg" association="__qQ-YGZHEeu3d4fJ0VeUzg"/>
     <ownedEnd xmi:id="__qbWcGZHEeu3d4fJ0VeUzg" type="_7CLY8GZHEeu3d4fJ0VeUzg" association="__qQ-YGZHEeu3d4fJ0VeUzg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_DpaUgGZIEeu3d4fJ0VeUzg" name="Database"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DpaUgGZIEeu3d4fJ0VeUzg" name="Database Filters"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_sKk2EGZIEeu3d4fJ0VeUzg" name="Type (venue, attraction, ....)"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_wBWTUGZIEeu3d4fJ0VeUzg" name="Timeline"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_8xzHAGZIEeu3d4fJ0VeUzg" memberEnd="_8xzuEGZIEeu3d4fJ0VeUzg _8xzuEWZIEeu3d4fJ0VeUzg">
